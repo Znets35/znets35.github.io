@@ -490,4 +490,184 @@ body {
             fill: #0c2c4a;
         }
 
-        
+        /* 📱 Мобильная адаптация */
+@media (max-width: 768px) {
+    /* Общие исправления */
+    body {
+        background-size: cover;
+        overflow-x: hidden;
+    }
+    
+    /* Шапка */
+    .header1 {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+    
+    .links {
+        font-size: 16px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .links .link + .link {
+        margin-left: 20px;
+    }
+    
+    /* Блок 1 */
+    .block1 {
+        flex-direction: column;
+        height: auto;
+        padding: 100px 20px 40px;
+    }
+    
+    .block1_1, .block1_2 {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .block1 img {
+        height: 50vh;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    
+    .block1_21 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .block1_2 h1 {
+        font-size: 28px;
+        padding-top: 30px;
+    }
+    
+    .block1_21 p {
+        font-size: 18px;
+        text-indent: 0;
+        text-align: center;
+    }
+    
+    /* Блок 2 */
+    .block2 {
+        flex-direction: column;
+        height: auto;
+        padding: 60px 20px 40px;
+    }
+    
+    .block2_1, .block2_2 {
+        width: 100%;
+    }
+    
+    .block2_1 img {
+        width: 250px;
+    }
+    
+    .block2_11 {
+        max-width: 100%;
+    }
+    
+    .block2_1 h1 {
+        font-size: 22px;
+    }
+    
+    .block2_1 p {
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    .slick-slider {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    
+    /* Блок 3 - Команда */
+    .block3 {
+        height: auto;
+        padding: 60px 20px 40px;
+    }
+    
+    .team-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .team-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .character-file {
+        padding: 15px;
+    }
+    
+    /* Блок 4 */
+    .block4 {
+        flex-direction: column;
+        height: auto;
+        padding: 60px 20px 40px;
+    }
+    
+    .block4_1, .block4_2 {
+        width: 100%;
+        padding: 20px 0;
+    }
+    
+    form {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    input, textarea {
+        font-size: 16px; /* Важно для iOS */
+    }
+    
+    /* Платформы */
+    .platforms {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .platform-btn {
+        width: 280px;
+        justify-content: center;
+    }
+    
+    .platforms-heading {
+        font-size: 24px;
+    }
+}
+
+/* 📱 Маленькие телефоны */
+@media (max-width: 480px) {
+    .header1_1 img {
+        width: 250px;
+        height: 50px;
+    }
+    
+    .links {
+        font-size: 14px;
+    }
+    
+    .links .link + .link {
+        margin-left: 15px;
+    }
+    
+    .block1_2 h1 {
+        font-size: 24px;
+    }
+    
+    .block1_21 p {
+        font-size: 16px;
+    }
+    
+    .team-title {
+        font-size: 24px;
+    }
+    
+    .char-name {
+        font-size: 18px;
+    }
+}
